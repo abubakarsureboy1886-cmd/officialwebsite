@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Future Academy | Zanzibar</title>
+    <style>
+        /* =========================
+           GLOBAL STYLES
+        ========================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f7fa;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* =========================
+           HEADER & NAVIGATION
+        ========================= */
+        header {
+            background: #0b3c5d;
+            color: #fff;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f9c74f;
+        }
+
+        /* =========================
+           HERO SECTION
+        ========================= */
+        .hero {
+            background: linear-gradient(rgba(11,60,93,0.7), rgba(11,60,93,0.7)), url("hero-image.jpg"); /* WEKA PICHA YAKO HAPA */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* =========================
+           ABOUT SECTION
+        ========================= */
+        section {
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: #0b3c5d;
+        }
+
+        .about {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            align-items: center;
+        }
+
+        /* =========================
+           PROGRAMS
+        ========================= */
+        .programs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-content h3 {
+            margin-bottom: 0.5rem;
+            color: #0b3c5d;
+        }
+
+        /* =========================
+           GALLERY
+        ========================= */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .gallery img {
+            border-radius: 8px;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        /* =========================
+           CONTACT
+        ========================= */
+        .contact {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .contact-info {
+            background: #0b3c5d;
+            color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 1rem;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+        footer {
+            background: #06283d;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container nav">
+        <div class="logo">Bright Future Academy</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#admission">Admission</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <div class="container">
+        <h1>HOME OF EXCELLENCE</h1>
+        <p>Bright Future Academy is committed to nurturing academic excellence, discipline, and strong moral values in Zanzibar.</p>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <div class="section-title">
+            <h2>About Bright Future Academy</h2>
+        </div>
+        <div class="about">
+            <div>
+                <p>
+                    Bright Future Academy is a private English-medium school located in Kombeni, Zanzibar. 
+                    We provide high-quality education that prepares students academically, socially, and morally for a successful future.
+                </p>
+            </div>
+            <div>
+                <img src="about.JPEG" alt="About School"> <!-- WEKA PICHA YAKO HAPA -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="programs">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Programs</h2>
+        </div>
+        <div class="programs">
+            <div class="card">
+                <img src="nursery.JPEG" alt="Nursery"> <!-- PICHA -->
+                <div class="card-content">
+                    <h3>Nursery Education</h3>
+                    <p>Building a strong foundation through play-based and guided learning.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="primary.JPEG" alt="Primary"> <!-- PICHA -->
+                <div class="card-content">
+                    <h3>Primary Education</h3>
+                    <p>Developing academic skills, creativity, and discipline.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="secondary.JPEG" alt="Secondary"> <!-- PICHA -->
+                <div class="card-content">
+                    <h3>Secondary Education</h3>
+                    <p>Preparing students for higher education and future careers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="gallery">
+    <div class="container">
+        <div class="section-title">
+            <h2>School Gallery</h2>
+        </div>
+        <div class="gallery">
+            <img src="gallery1.JPEG" alt="Gallery"> <!-- PICHA -->
+            <img src="gallery2.JPEG" alt="Gallery"> <!-- PICHA -->
+            <img src="gallery3.JPEG" alt="Gallery"> <!-- PICHA -->
+            <img src="gallery4.JPEG" alt="Gallery"> <!-- PICHA -->
+        </div>
+    </div>
+</section>
+
+<section id="admission">
+    <div class="container">
+        <div class="section-title">
+            <h2>Admission</h2>
+        </div>
+        <div class="contact">
+            <div>
+                <p>
+                    We welcome applications from parents and guardians who wish to enroll their children at Bright Future Academy.
+                    Please complete the admission form below and submit your application directly to our official email.
+                </p>
+                <form action="mailto:info@brightfutureacademy.ac.tz" method="post" enctype="text/plain">
+                    <input type="text" name="Student Name" placeholder="Student Full Name" required style="width:100%; padding:10px; margin-bottom:10px;">
+                    <input type="text" name="Parent/Guardian Name" placeholder="Parent / Guardian Name" required style="width:100%; padding:10px; margin-bottom:10px;">
+                    <input type="email" name="Email" placeholder="Parent Email Address" required style="width:100%; padding:10px; margin-bottom:10px;">
+                    <input type="text" name="Class Applying For" placeholder="Class Applying For" required style="width:100%; padding:10px; margin-bottom:10px;">
+                    <textarea name="Message" placeholder="Additional Information" rows="5" style="width:100%; padding:10px; margin-bottom:10px;"></textarea>
+                    <button type="submit" style="background:#0b3c5d; color:#fff; padding:12px 20px; border:none; border-radius:5px; cursor:pointer;">Submit Application</button>
+                </form>
+            </div>
+            <div>
+                <img src="admission.JPEG" alt="Admission"> <!-- PICHA -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="contact">
+            <div class="contact-info">
+                <h3>Bright Future Academy</h3>
+                <p>Location: Kombeni, Zanzibar</p>
+                <p>Phone: +255 654828412</p>
+
+               
+<p>Email: school.brightfuture@gmail.com</p>
+            </div>
+            <div>
+                <img src="contact.JPEG" alt="Contact Image"> <!-- PICHA -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Bright Future Academy. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
